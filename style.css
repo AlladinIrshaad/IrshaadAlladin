@@ -58,7 +58,7 @@ li :hover {
 /*cover*/
 .main-container {
     display: grid;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-color: black; 
 }
@@ -71,14 +71,13 @@ li :hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -85%);
     width: 100%;
 }
 
 
 .text1 {
-    font-size: 80px;
-    font-size: 500;
+    font-size: 55px;
     font-family: playball; 
     text-transform: none;
     position: relative;
@@ -87,8 +86,9 @@ li :hover {
 }
 
 .text2 {
-    font-size: 130px;
-    font-size: 800;
+    color: rgb(211, 59, 42);
+    word-spacing: 2%;
+    font-size: 75px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     animation: text 3s 1;
@@ -100,10 +100,6 @@ li :hover {
     0% {
       color: black;
       margin-bottom: -40px;
-    }
-    30% {
-        letter-spacing: 25px;
-        margin-bottom: -40px;
     }
     85% {
         letter-spacing: 8px;
@@ -120,7 +116,7 @@ li :hover {
         font-size: 1.4em;
         padding: 0;
         top: 30%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -50%);
         animation-timing-function: linear;
     }
 }
@@ -141,61 +137,114 @@ li :hover {
 
 /*about me*/
 .about-heading {
-    padding-top: 4%;
+    padding-top: 5%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
 }
 
-.about-container1 {
-    display: flex;
-    width: 50%;
-    float: left;
-    padding: 140px;
-    padding-top: 0%;
-    line-height: 4vh;
-}
-
-.about-container2 {
-    display: flex;
-    width: 50%;
-    float: right;
-    padding: 140px;
-    padding-top: 0%;
-    line-height: 4vh;
+.about-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 5vh;
 }
 
 
 @media only screen and (max-width: 600px) {
     .about-heading  {
-        padding-top: 7%; 
+        padding-top: 10%;
+        margin: auto;
     }     
 }
 
 @media only screen and (max-width: 600px) {
-    .about-container1, .about-container2  {
+    .about-container,  {
         font-size: 0.5em;
         padding: 5%;
-        padding-top: 0%;
         width: fit-content;
     }     
 }
 
 
-
-
 /*Certificates*/
-.main-certificates {
+.main-cert {
     padding-top: 2%;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.col {
+    height: 300px;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.anchor {
+    color: rgb(211, 59, 42);
+}
+
+.col:hover {
+    transform: scale(0.9);
+    background-color: rgb(190, 186, 186);
+}
+
+
+
+/*Skills*/
+.main-skills {
+    padding-top: 2%;
+    display: grid;
+    height: 80vh;
+    width: 100vw;
+}
+
+.skills {
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*Resume*/
+.main-resume {
+    padding-top: 5%;
     display: grid;
     height: 80vh;
     width: 100vw;
     background-color: grey; 
 }
 
-.cert {
+.resume {
     text-align: center;
     color: #EFEFEF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*Contact me*/
+.main-contact {
+    padding-top: 2%;
+    display: grid;
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(211, 59, 42);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
 }
