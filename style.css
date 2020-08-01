@@ -160,7 +160,7 @@ li :hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .about-container,  {
+    .about-container  {
         font-size: 0.5em;
         padding: 5%;
         width: fit-content;
@@ -177,24 +177,34 @@ li :hover {
     text-transform: uppercase;
 }
 
-.col {
+.col-6 {
     height: 300px;
-    margin: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 10px;
     text-align: center;
     background-color: lightgray;
     border-radius: 8px;
+    position: sticky;
 }
 
 .anchor {
     color: rgb(211, 59, 42);
 }
 
-.col:hover {
+.col-6:hover {
     transform: scale(0.9);
     background-color: rgb(190, 186, 186);
 }
 
+@media only screen and (max-width: 600px) {
+    .col-6 {
+        height: 320px;
+        margin-left: 6rem;
+        padding-top: 5px; 
+    }
+}
 
 
 /*Skills*/
