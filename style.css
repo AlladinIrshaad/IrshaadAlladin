@@ -118,6 +118,8 @@ li :hover {
         top: 30%;
         transform: translate(-50%, -50%);
         animation-timing-function: linear;
+        overflow-y: hidden;
+        font-weight: bolder;
     }
 }
 
